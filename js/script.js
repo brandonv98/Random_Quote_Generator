@@ -101,7 +101,6 @@ const printQuote = () => { // Print quote to screen.
   } else {
     quote.setAttribute('style', '');
   }
-
   // Append quote content
   for (var i = 0; i < nodes.length; i++) {
     if (quote.textContent === quoteToGet) { // Make sure quote is not doubled.
