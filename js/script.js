@@ -55,7 +55,7 @@ const quotes = [{
 ];
 // event listener to respond to "Show another quote" button clicks
 const quoteButton = document.getElementById('loadQuote');
-nodeConfig = () => {
+nodeConfig = () => { // Get document nodes.
   const quoteBoxDisplay = document.querySelector('#quote-box');
   const quote = quoteBoxDisplay.firstElementChild;
   const sourceText = quoteBoxDisplay.childNodes[3].childNodes[0]; // Get text node
