@@ -55,7 +55,7 @@ const quotes = [{
 ];
 // event listener to respond to "Show another quote" button clicks
 const quoteButton = document.getElementById('loadQuote');
-nodeConfig = () => { // Get document nodes.
+nodeConfig = () => { // Travers document nodes.
   const quoteBoxDisplay = document.querySelector('#quote-box');
   const quote = quoteBoxDisplay.firstElementChild;
   const sourceText = quoteBoxDisplay.childNodes[3].childNodes[0]; // Get text node
@@ -104,7 +104,7 @@ const printQuote = () => { // Print quote to screen.
   // Append quote content
   for (var i = 0; i < nodes.length; i++) {
     if (quote.textContent === quoteToGet) { // Make sure quote is not doubled.
-      randomQ = generateRandomNumber(); // Reroll
+      // randomQ = generateRandomNumber(); // Reroll
       contentToDisplay(nodes[i]); // append content
     } else {
       contentToDisplay(nodes[i]);
